@@ -1,10 +1,10 @@
 var md = require('markdown-it')()
 var trumpet = require('trumpet')
-var layout = require('./layout')
-var read = require('./read')
+var layout = require('../lib/layout')
+var read = require('../lib/read')
 
 module.exports = function (serviceLocator) {
-  return function (req, res, params) {
+  return function (req, res, next, params) {
     var code = params.shortCode
 
     serviceLocator.logger.debug('Getting code ' + code)

@@ -1,4 +1,4 @@
-var createGetUnusedCode = require('./get-unused-code')
+var createGetUnusedCode = require('../lib/get-unused-code')
 
 module.exports = function (serviceLocator) {
   var getUnusedCode = createGetUnusedCode(serviceLocator)
@@ -6,7 +6,7 @@ module.exports = function (serviceLocator) {
   return function (req, res) {
     if (req.method === 'GET') {
       // read('form.html').pipe(layout(res))
-      res.end('Web uploading coming soon...')
+      res.end('Web uploading coming soon...maybe...')
     } else if (req.method === 'POST') {
       if (req.headers['content-type'] === 'x-markdown') {
         getUnusedCode(function (error, code) {
