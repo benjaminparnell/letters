@@ -1,0 +1,24 @@
+{
+  "name": "letters",
+  "version": "0.1.0-rc1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "lint": "standard",
+    "prepublish": "npm run lint"
+  },
+  "author": "Ben Parnell <me@benparnell.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.3.4",
+    "ecstatic": "^0.7.1",
+    "level": "^0.18.0",
+    "markdown-it": "^4.1.0",
+    "routes": "^2.0.0",
+    "service-locator": "^1.0.0",
+    "trumpet": "^1.7.1"
+  },
+  "devDependencies": {
+    "standard": "^3.3.2"
+  }
+}

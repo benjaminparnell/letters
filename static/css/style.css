@@ -1,0 +1,11 @@
+body {
+  font-family: 'Droid Serif', serif;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+.container.letter {
+  width: 600px;
+}
